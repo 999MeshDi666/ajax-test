@@ -1,0 +1,55 @@
+@mixin reset_spaces {
+    padding: 0;
+    margin: 0;
+}
+body{
+    @include reset_spaces();
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.container{
+    max-width: 570px;
+    margin: 120px auto;
+
+    .form_title{
+        text-align: center;
+    }
+
+    .info_form{
+        padding: 0 80px;
+
+        .g_fieldset{
+            outline: none;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            label{
+                margin-bottom: 5px;
+            }
+            .g_inputs{
+                border: 0;
+                outline: none;
+                padding: 12px;
+            }
+
+        }
+        .submit_btn{
+            display: block;
+            width: 180px;
+            padding: 10px 0;
+            margin: 0 auto;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #fff;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}
+
+
