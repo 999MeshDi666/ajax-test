@@ -28,15 +28,15 @@ if(isset($_POST["name"]) && isset($_POST["surname"]) && isset($_POST["email"]) &
 
   $sql = "INSERT INTO user_info VALUES(null,'$u_name','$u_surname','$u_email','$u_tel')";
   $result = mysqli_query($conn,$sql);
-  var_dump($result);
+  // var_dump($result);
   
-  if ($result == true){
-    echo "Информация занесена в базу данных";
-  }
-  else{
-    echo "Информация не занесена в базу данных";
-    echo mysqli_error($conn);
-  } 
+  // if ($result == true){
+  //   echo "Информация занесена в базу данных";
+  // }
+  // else{
+  //   echo "Информация не занесена в базу данных";
+  //   echo mysqli_error($conn);
+  // } 
   return $result;
   mysqli_close($conn);
   
