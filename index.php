@@ -1,6 +1,6 @@
-<!-- <?
+<?
     include('db.php')
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +34,15 @@
         </form>
     </div>
 
+    <div class="mes_window">
+        <p>Закрыть</p>
+        <div class="mes_text">
+            <h1>Отлично!!!</h1>
+            <p>Информация успешно отправлена</p>
+        </div>
+    </div>
+
+   
     <script src="./scripts/scripts.js"></script>
 </body>
 </html>
