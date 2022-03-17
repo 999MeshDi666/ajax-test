@@ -6,8 +6,6 @@ close_mes_win.addEventListener('click', ()=>{
 })
 
 
-
-
 let name = document.getElementById('name');
 let surname = document.getElementById('surname');
 let email = document.getElementById('email');
@@ -16,7 +14,7 @@ let tel = document.getElementById('tel');
 
 function sendRequest(e){
 
-    e.preventDefault();
+    // e.preventDefault();
     let form = document.getElementById('form_info');
     let formData = new FormData(form);
     $.ajax({
